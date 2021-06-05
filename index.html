@@ -12,41 +12,64 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <div class="box">
-        <form action="#">
-          <div class="row borred">
+        <form action="google.com" id="form1">
+          <div class="row details">
             <div class="col-1 required">Name</div>
           </div>
           <div class="row">
-            <div class="col-4"><input type="text" /></div>
-            <div class="col-4"><input type="text" /></div>
+            <div class="col-4"><input type="text" required /></div>
+            <div class="col-4"><input type="text" required /></div>
           </div>
           <div class="row">
             <div class="col-4">First</div>
             <div class="col-4">Last</div>
           </div>
-          <div class="row">
+          <div class="row details">
             <div class="col required">Email</div>
           </div>
           <div class="row">
-            <div class="col-8"><input type="text" /></div>
+            <div class="col-8"><input type="text" required /></div>
           </div>
-          <div class="row">
+          <div class="row details">
             <div class="col required">Your Experience</div>
           </div>
-          <div class="row">
-            <div class="col-8"><input type="text" /></div>
+
+          <div class="borderRating row">
+            <div class="rating col offset-1">
+              <input type="radio" name="star" id="star1" /><label
+                for="star1"
+              ></label>
+              <input type="radio" name="star" id="star2" /><label
+                for="star2"
+              ></label>
+              <input type="radio" name="star" id="star3" /><label
+                for="star3"
+              ></label>
+              <input type="radio" name="star" id="star4" /><label
+                for="star4"
+              ></label>
+              <input type="radio" name="star" id="star5" /><label
+                for="star5"
+              ></label>
+            </div>
           </div>
+          
+
           <div class="row">
             <div class="col">
               Overall how would you rate your experience with us?
             </div>
           </div>
 
-          <div class="table col borred">
+          <div class="table col">
             <div class="row head">
               <div class="col-4 required">How Satisfied are you with</div>
               <div class="col">Very Unsatisfied</div>
@@ -57,27 +80,27 @@
             </div>
             <div class="row darkrow">
               <div class="col-4">Purchase</div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
+              <div class="col"><input type="radio" name="option1" /></div>
+              <div class="col"><input type="radio" name="option1" /></div>
+              <div class="col"><input type="radio" name="option1" /></div>
+              <div class="col"><input type="radio" name="option1" /></div>
+              <div class="col"><input type="radio" name="option1" /></div>
             </div>
             <div class="row">
               <div class="col-4">Service</div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
+              <div class="col"><input type="radio" name="option2" /></div>
+              <div class="col"><input type="radio" name="option2" /></div>
+              <div class="col"><input type="radio" name="option2" /></div>
+              <div class="col"><input type="radio" name="option2" /></div>
+              <div class="col"><input type="radio" name="option2" /></div>
             </div>
             <div class="row darkrow">
               <div class="col-4">Company Overall</div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
+              <div class="col"><input type="radio" name="option3" /></div>
+              <div class="col"><input type="radio" name="option3" /></div>
+              <div class="col"><input type="radio" name="option3" /></div>
+              <div class="col"><input type="radio" name="option3" /></div>
+              <div class="col"><input type="radio" name="option3" /></div>
             </div>
           </div>
           <div class="table col">
@@ -91,40 +114,48 @@
             </div>
             <div class="row darkrow">
               <div class="col-4 borred">Buy from us again</div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
+              <div class="col"><input type="radio" name="option4" /></div>
+              <div class="col"><input type="radio" name="option4" /></div>
+              <div class="col"><input type="radio" name="option4" /></div>
+              <div class="col"><input type="radio" name="option4" /></div>
+              <div class="col"><input type="radio" name="option4" /></div>
             </div>
             <div class="row">
               <div class="col-4">Recommend our products to others</div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
+              <div class="col"><input type="radio" name="option5" /></div>
+              <div class="col"><input type="radio" name="option5" /></div>
+              <div class="col"><input type="radio" name="option5" /></div>
+              <div class="col"><input type="radio" name="option5" /></div>
+              <div class="col"><input type="radio" name="option5" /></div>
             </div>
             <div class="row darkrow">
               <div class="col-4">Recommend our company to others</div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
-              <div class="col"><input type="radio" /></div>
+              <div class="col"><input type="radio" name="option6" /></div>
+              <div class="col"><input type="radio" name="option6" /></div>
+              <div class="col"><input type="radio" name="option6" /></div>
+              <div class="col"><input type="radio" name="option6" /></div>
+              <div class="col"><input type="radio" name="option6" /></div>
             </div>
           </div>
-
           <div class="row">
             <div class="col">Additional comments or suggestions</div>
           </div>
-          <div class="row additional">
-            <div class="col">
+          <div class="row">
+            <div class="col additional">
               <input type="text" />
             </div>
           </div>
           <div class="row">
-            <div class="col"><button type="submit">Submit</button></div>
+            <div class="col details">
+              <button
+                type="submit"
+                form="form1"
+                value="Submit"
+                class="submitButton"
+              >
+                Submit
+              </button>
+            </div>
           </div>
         </form>
       </div>

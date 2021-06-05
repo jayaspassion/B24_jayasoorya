@@ -3,26 +3,28 @@ body{
    background-repeat: no-repeat;
    background-attachment: fixed;
 }
-/* div{
-    border: 1px solid red;
-} */
+div{
+    position: relative;
+} 
 
 body{
     font-size: small;
 }
 .container{
-    
     background: white;
     margin-top: 5%;
     padding: 10px;
-    border: 1px solid black;
-    max-width: 900px;
+    /* border: 1px solid black; */
+    max-width: 800px;
     width: 100%;
     height: 100%;
 
 }
 .box{
     margin: 2%;
+}
+.required{
+    font-weight: bold ;
 }
 
 .required:after{
@@ -50,17 +52,77 @@ body{
     
 }
 
-
-/* .borred{
-    border: 1px solid red;
-} */
-
-/* .table{
-    display: block;
-    border: 1px solid blue;
+.table{
     
-} */
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
 
-/* .table .row{
-    margin-inline: 0;
-} */
+.table .row{
+    padding: 5px;   
+}
+.table .col{
+    align-self: center;
+}
+
+.details{
+    margin-top: 2%;
+}
+.submitButton{
+    border: 1px solid rgba(0, 0, 0, 0.139);
+
+}
+
+.rating{
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    direction: rtl;
+   
+}
+
+
+.rating input{
+    display: none;
+}
+.rating label{
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    
+}
+
+
+
+.rating label:before{
+    position: absolute;
+    content: '\f005';
+    font-family: fontAwesome;
+    font-size: 20px;
+    color: grey;
+    
+}
+
+.rating label:after{
+    position: absolute;
+    content: '\f005';
+    font-family: fontAwesome;
+    font-size: 20px;
+    color: orange;
+    opacity: 0;
+}
+
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after{
+    
+    opacity: 1;
+}
+
+
+.borderRating{
+    display: inline-block;
+    position: relative;
+    
+}
