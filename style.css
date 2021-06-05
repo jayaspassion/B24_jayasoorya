@@ -51,10 +51,16 @@ body{
 }
 
 
-.borred{
+/* .borred{
     border: 1px solid red;
-}
+} */
 
-.table{
+/* .table{
     display: block;
-}
+    border: 1px solid blue;
+    
+} */
+
+/* .table .row{
+    margin-inline: 0;
+} */
