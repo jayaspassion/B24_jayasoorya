@@ -1,0 +1,83 @@
+.secondary-color {
+  color: teal;
+  /*     padding: 5px; */
+  /*     padding: 5px 10px; top,bottom & left & right
+/*    padding: 5px 10px 15px; top <left & right> bottom */
+  padding: 20px;
+  border: 1px solid teal;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+/* Box-model of css*/
+
+/* More reusability - multiple classes */
+
+.second {
+  background: pink;
+}
+
+/* pseudo selector */
+.second:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* id - only once */
+/* class - multiple times or reused*/
+
+#one:hover {
+  color: black;
+}
+
+/* #two{
+  color: blue;
+} */
+
+#one {
+  text-decoration: underline;
+}
+
+li {
+  color: pink;
+  color: #ffdd40c9;
+  color: rgb(14 190 255);
+  /*   hex-code */
+  /* rgba
+  hsla */
+  font-size: 25px;
+  font-weight: 900; /*   100, 200, 300, ... 900 */
+  text-transform: uppercase;
+}
+
+/* specificity */
+/* higher priority or percedence */
+/* id > class > elements or tags */
+
+ul {
+  letter-spacing: 10px;
+  color: green;
+  list-style: none;
+}
+
+.sentence {
+  color: red;
+  /*   padding: 4px;
+  margin: 5px; */
+}
+
+/* li{
+ color: green;  
+} */
+
+.layout {
+  display: flex;
+}
+
+a {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   color: crimson;
+   padding: 4px; 
+}
